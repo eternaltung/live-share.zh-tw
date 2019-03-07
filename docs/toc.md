@@ -1,0 +1,41 @@
+<!-- markdownlint-disable MD022 MD025 -->
+# 總覽
+## [什麼是 Visual Studio Live Share？](index.md)
+# 快速入門
+## [共用您的第一個專案](quickstart/share.md)
+## [加入您的第一個工作階段](quickstart/join.md)
+# 作法指南：VS Code
+## [概觀](use/vscode.md)
+## [安裝](use/vscode.md#installation)
+## [登入](use/vscode.md#sign-in)
+## [共用專案](use/vscode.md#share-a-project)
+## [加入工作階段](use/vscode.md#join-a-collaboration-session)
+## [共同編輯](use/vscode.md#co-editing)
+## [關注和聚焦](use/vscode.md#following)
+## [共同偵錯](use/vscode.md#co-debugging)
+## [共用伺服器](use/vscode.md#share-a-server)
+## [共用終端機](use/vscode.md#share-a-terminal)
+# 作法指南：Visual Studio
+## [概觀](use/vs.md)
+## [安裝](use/vs.md#installation)
+## [登入](use/vs.md#sign-in)
+## [共用專案](use/vs.md#share-a-project)
+## [加入工作階段](use/vs.md#join-a-collaboration-session)
+## [共同編輯](use/vs.md#co-editing)
+## [關注和聚焦](use/vs.md#following)
+## [共同偵錯](use/vs.md#co-debugging)
+## [共用伺服器](use/vs.md#share-a-server)
+## [共用終端機](use/vs.md#share-a-terminal)
+# 參考資料
+## [安全性](reference/security.md)
+## [連線能力](reference/connectivity.md)
+## [語言支援](reference/platform-support.md)
+## [延伸模組支援](reference/extensions.md)
+## [常見使用案例](reference/use-cases.md)
+## [Linux 安裝詳細資料](reference/linux.md)
+## [版本資訊](https://aka.ms/vsls-releases)
+# 資源
+## [疑難排解](troubleshooting.md)
+## [提供意見反應](support.md)
+## [常見問題集](faq.md)
+## [使用者設定檔](user-profile.md)
