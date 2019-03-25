@@ -1,6 +1,6 @@
 ---
-title: 加入快速入門-Visual Studio Live Share |Microsoft Docs
-description: 第一個 Visual Studio Live Share 共同作業工作階段來聯結縮減逐步解說。
+title: 加入快速入門 - Visual Studio Live Share | Microsoft Docs
+description: 加入您第一個 Visual Studio Live Share 共同作業工作階段的概略逐步解說。
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.workload:
 - liveshare
 ms.openlocfilehash: d4280484aaa3fd4ac204588bf4aefc4e3ac51871
 ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/02/2019
 ms.locfileid: "57255609"
@@ -30,18 +30,18 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 > **注意：Visual Studio Live Share 目前為預覽狀態。使用者體驗和功能不是最終版本。**
 
-歡迎使用 Visual Studio Live Share！ Live Share 可讓您即時與其他人以共同作業方式編輯和偵錯，不論您所使用程式設計語言或建置的應用程式類型為何。 它可讓您立即且安全地加入目前專案的小組，並視需要輸入偵錯工作階段，然後檢視和編輯終端機執行個體，請參閱 localhost web 應用程式、 聯結語音通話、 和更多功能 ！
+歡迎使用 Visual Studio Live Share！ Live Share 可讓您即時與其他人以共同作業方式編輯和偵錯，不論您所使用程式設計語言或建置的應用程式類型為何。 也可讓您立即且安全地加入小組成員的專案，然後視需要進入偵錯工作階段、檢視並編輯終端機執行個體、查看 localhost Web 應用程式、加入語音通話等！
 
-準備好開始著手了嗎？ 因此快速且自然，就不難這麼做，應該是小組共同作業 ！ 基於這個理由，Visual Studio Live Share 可簡化開始使用，以便您可以無接縫地開始共用您的工作和想法。
+準備好開始著手了嗎？ 小組共同作業就應該如此快速且自然，且能輕鬆做到！ 因此，Visual Studio Live Share 可讓您輕鬆開始使用，以便您順暢地開始共用您的工作和想法。
 
 > [!TIP]
 > 您知道您可以「加入自己的共同作業工作階段」嗎？ 這讓您可以自行試用 Live Share，或是啟動 Visual Studio 或 VS Code 的執行個體，並從遠端連線到該執行個體！ 您甚至可以在這兩個執行個體上使用相同的身分識別。 趕緊去瞧一瞧！
 
-只要遵循下列步驟來加入共同作業工作階段。
+只要遵循下列步驟即可加入共同作業工作階段。
 
-## <a name="1-install-the-extension"></a>1.安裝擴充功能
+## <a name="1-install-the-extension"></a>1.安裝延伸模組
 
-安裝延伸模組很簡單。 只要遵循下列步驟：
+安裝延伸模組很簡單。 請遵循下列步驟進行：
 
 <table style="width: 100%; border:none;">
 <tr>
@@ -78,32 +78,32 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 下載並使用 Visual Studio Live Share 即表示您同意[授權條款](https://aka.ms/vsls-license)和[隱私權聲明](https://www.microsoft.com/en-us/privacystatement/EnterpriseDev/default.aspx)。 如果您遇到問題，請參閱[疑難排解](../troubleshooting.md)。
 
-## <a name="2-optional-join-as-a-read-only-guest-in-vs-code"></a>2.[選擇性] 為唯讀的來賓，在 VS Code 中的聯結
+## <a name="2-optional-join-as-a-read-only-guest-in-vs-code"></a>2. [選擇性] 在 VS Code 中作為唯讀來賓加入
 
-在 VS Code 中，安裝 Live Share 延伸模組、 重新啟動，並等待相依性之後才能完成安裝，您可以開始，並加入共同作業工作階段為唯讀的來賓。
-
-> [!NOTE]
-> 如果您想要對您要加入的程式碼進行編輯，您必須[登入](../quickstart/join.md#3-Sign-in)。
-
-開啟 （或重新開啟） 瀏覽器中的 [邀請] 連結，您會收到通知，在瀏覽器會想要啟動 VS Code。 讓它啟動，並先連接到共同作業工作階段。
-
-當啟動 VS Code 時，您會收到快顯通知，要求您登入。 選取 繼續為唯讀的來賓 」 加入工作階段。
-
-![加入做為唯讀客體快顯通知的工作階段](../media/vscode-read-only-guest.png)
-
-系統會要求您輸入的顯示名稱，以協助您識別工作階段中的參與者。
-
-![唯讀客體名稱](../media/vscode-read-only-guest-name.png)
-
-之後，您會加入到工作階段為唯讀。 您將能夠檢視和巡覽程式碼、 共同的偵錯，以及檢視共用伺服器和終端機 （唯讀）。
+在 VS Code 中安裝 Live Share 延伸模組、重新啟動並等待相依性完成安裝後，您即可作為唯讀來賓加入共同作業工作階段。
 
 > [!NOTE]
-> 如果您想要稍後取得 讀取/寫入存取權的程式碼，您可以登入。 按一下您的顯示名稱狀態、 在列中，選取選項 [登入]。
-![唯讀的訪客登入](../media/vscode-read-only-guest-signin.png)這樣就會啟動瀏覽器中，而且您可以選擇 Microsoft 或 GitHub 帳戶來登入。
+> 如果您希望對您要加入的程式碼進行編輯，您必須[登入](../quickstart/join.md#3-Sign-in)。
+
+開啟 (或重新開啟) 瀏覽器中的邀請連結，您會收到瀏覽器想要啟動 VS Code 的通知。 讓其啟動，即會連線至共同作業工作階段。
+
+啟動 VS Code 時，您會收到快顯通知，要求您登入。 選取 [以唯讀來賓身分繼續] 加入工作階段。
+
+![以唯讀來賓身分加入工作階段快顯通知](../media/vscode-read-only-guest.png)
+
+系統會要求您輸入顯示名稱，以協助工作階段中的參與者識別您。
+
+![唯讀來賓名稱](../media/vscode-read-only-guest-name.png)
+
+之後，您即會作為唯讀來賓加入工作階段。 您將能夠檢視和巡覽程式碼、共同偵錯、檢視共用伺服器和終端機 (唯讀)。
+
+> [!NOTE]
+> 如果您希望稍後取得對程式碼的讀取/寫入存取權，您可以登入。 在狀態列按一下您的顯示名稱，選取 [登入] 選項。
+![唯讀來賓登入](../media/vscode-read-only-guest-signin.png)這會啟動您的瀏覽器，您可以選擇使用 Microsoft 或 GitHub 帳戶來登入。
 
 ## <a name="3-sign-in"></a>3.登入
 
-安裝 Live Share 延伸模組、 重新啟動，並等待相依性，以完成安裝 (VS Code) 之後, 您會想要讓其他參與者了解您的身分登入。 如果您略過此步驟中，您會要求聯結過程中，登入，或可以加入工作階段為唯讀的來賓。 按一下 「 共用 」 狀態列項目 (VS Code) / 登入 按鈕 (VS) 開始。
+安裝 Live Share 延伸模組、重新啟動並等待相依性完成安裝 (VS Code) 之後，您會想要登入以便其他參與者知道您是誰。 如果您略過此步驟，系統會要求您在加入程序中登入，或作為唯讀來賓加入工作階段。 按一下 [共用] 狀態列項目 (VS Code)/[登入] 按鈕 (VS) 來開始。
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -116,55 +116,55 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </tr>
 </table>
 
-在  **VS Code**，通知會出現要求您登入的啟動時，將會啟動您的瀏覽器。 完成登入您的瀏覽器中的程序，然後只需關閉瀏覽器完成。
+在 **VS Code** 中，瀏覽器會在要求您登入的通知出現時啟動。 在瀏覽器中完成登入程序，完成後關閉瀏覽器。
 
-![使用網頁瀏覽器登入要求的快顯通知](../media/vscode-sign-in-toast.png)
+![使用網頁瀏覽器要求您登入的快顯通知](../media/vscode-sign-in-toast.png)
 
-> **Linux 使用者：** 您可能會提示您輸入使用者程式碼，如果您使用較舊版本的 Live Share (v0.3.295 或以下版本)。 更新延伸模組的最新版本，或按一下 「 需要疑難排解嗎？ 」 連結登入之後，以查看程式碼。 請參閱[如需詳細資訊，這裡](../use/vscode.md#sign-in-using-a-user-code)。
+> **Linux 使用者：** 如果您使用舊版 Live Share (v0.3.295 或更舊版本)，系統可能會提示您輸入使用者程式碼。 將延伸模組更新為最新版本，或在登入後按一下 [遇到問題了嗎?] 連結以查看程式碼。 請參閱[此處以取得詳細資料](../use/vscode.md#sign-in-using-a-user-code)。
 
-在  **Visual Studio**，Live Share 會自動使用您[個人化帳戶](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)。 如此一來，您可以直接登入可以用正常方式。 不過，如果您不希望使用不同登入與您的 Visual Studio 個人化帳戶，請移至**工具&gt;選項&gt;Live Share&gt;使用者帳戶**並選取不同的認證。
+在 **Visual Studio** 中，Live Share 會自動使用您的[個人化帳戶](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)。 如此一來，您即可直接以一般方式登入。 不過，如果您希望使用與 Visual Studio 個人化帳戶不同的登入方式，請前往 [工具] &gt; [選項] &gt; [Live Share] &gt; [使用者戶帳戶]，然後選取不同的認證。
 
-請參閱[疑難排解](../troubleshooting.md#sign-in)如果仍然發生問題。
+如果仍然發生問題，請參閱[疑難排解](../troubleshooting.md#sign-in)。
 
-## <a name="4-openre-open-the-invite-link-in-a-browser"></a>4.開啟/重新-open 邀請連結在瀏覽器
+## <a name="4-openre-open-the-invite-link-in-a-browser"></a>4.開啟/重新開啟瀏覽器中的邀請連結
 
-現在，只要開啟 （或重新開啟） 瀏覽器中的 [邀請] 連結。
+現在，請開啟 (或重新開啟) 瀏覽器中的邀請連結。
 
-> **注意**：如果您尚未安裝 Live Share 延伸模組，您將會看到擴充功能市集的連結。 安裝擴充功能並重新啟動您的工具，然後重試。
+> **注意**：如果您尚未安裝 Live Share 延伸模組，您將會看到延伸模組市集的連結。 安裝延伸模組並重新啟動您的工具，然後重試。
 
-您應該會收到通知，瀏覽器就會想要啟動已啟用 Live Share 工具。 如果您讓它啟動您所選的工具，您會連接到其啟動之後的共同作業工作階段。
+您應該會收到通知，指出瀏覽器想要啟動提供 Live Share 的工具。 如果您讓其啟動所選的工具，則在啟動後您將連線至共同作業工作階段。
 
 ![加入頁面](../media/join-page.png)
 
-如果主機已離線，您會收到通知現在改為。 然後，您可以連絡主機，並要求他們再次共用。
+如果主持人已離線，則會改為在此時收到通知。 您即可以連絡主持人，並要求再次共用。
 
-> **疑難排解秘訣：** 當使用 VS Code，是確定您已**至少一次啟動此工具**安裝延伸模組並等候相依性，以完成安裝之後 （請參閱 [狀態] 列） 之前開啟/重新-opening [邀請] 頁面。 仍然有問題嗎？ 請參閱[手動聯結](../reference/manual-join.md)如需詳細資訊。
+> **疑難排解提示：** 使用 VS Code 時，請確定在安裝延伸模組後**至少啟動一次工具**，並等待相依性完成安裝 (請參閱狀態列) 後，再開啟/重新開啟邀請頁面。 仍然遇到問題嗎？ 請參閱[手動加入](../reference/manual-join.md)以取得詳細資料。
 
-## <a name="5-collaborate"></a>5.共同作業 ！
+## <a name="5-collaborate"></a>5.共同作業！
 
-就這麼容易！ 幾分鐘後，您會連接到您的同事共同作業工作階段。 根據預設，主應用程式自動接受加入，但主機已設定最多的人[需要客體核准](../reference/security.md#requiring-guest-approval)您將看到狀態列 / 加入 Live Share 正在等候核准您的要求，以加入主機上的對話方塊值得一提。
+就這麼容易！ 一小段時間後，您就會連線至您同事的共同作業工作階段。 根據預設，主持人會自動接受人員加入，但如果主持人設定[需要來賓核准](../reference/security.md#requiring-guest-approval)，則您會看到狀態列/加入對話指出 Live Share 正在等待主持人核准您的加入要求。
 
-> **安全性秘訣：** 為來賓加入共同作業工作階段，請務必了解主機可能會針對您的存取權限制至特定檔案或功能。 想要了解一些 Live Share 功能和設定的安全性含意？ 請參閱[安全性](../reference/security.md)文章。
+> **安全性提示：** 作為來賓加入共同作業工作階段時，請務必了解主持人可能會限制您存取特定檔案或功能。 想要了解一些 Live Share 功能和設定的安全性影響嗎？ 請參閱[安全性](../reference/security.md)一文。
 
-以下是嘗試幾件事：
+您可以嘗試下列一些事項：
 
-1. 獨立專案四處移動，並進行某些編輯
-2. 查看適用於 JavaScript、 TypeScript、 使用 intellisense 和/或C#程式碼
-3. 編輯項目與主應用程式
-4. 請依照下列主機，並瀏覽並在不同的檔案進行編輯，四處移動與其
-5. 啟動與主應用程式的共同偵錯工作階段
-6. 要求者共用的伺服器，因此您可以看看起來像在其電腦上執行的 web 應用程式
-7. 要求者共用終端機，並執行一些命令
+1. 獨自瀏覽專案，並進行一些編輯
+2. 查看適用於 JavaScript、TypeScript 和/或 C# 程式碼的工作 Intellisense
+3. 與主持人一起編輯某些內容
+4. 在主持人進行巡覽並在不同檔案中編輯時跟著一起進行
+5. 啟動與主持人的共同偵錯工作階段
+6. 要求主持人共用伺服器，以便您查看在其電腦上執行的 Web 應用程式
+7. 要求主持人共用終端機並執行一些命令
 
 有問題嗎？ 請參閱[疑難排解](../troubleshooting.md)或[提供意見反應](../support.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-看看這些額外的文章，如需詳細資訊。
+請查看下列其他文章以取得詳細資訊。
 
 - [快速入門：共用您的第一個專案](share.md)
-- [操作說明：使用 Visual Studio Code 進行共同作業](../use/vscode.md)
-- [操作說明：使用 Visual Studio 進行共同作業](../use/vs.md)
+- [如何：使用 Visual Studio Code 共同作業](../use/vscode.md)
+- [如何：使用 Visual Studio 共同作業](../use/vs.md)
 
 參考資料
 

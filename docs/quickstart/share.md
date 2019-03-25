@@ -1,6 +1,6 @@
 ---
-title: 共用的快速入門-Visual Studio Live Share |Microsoft Docs
-description: 共用您的第一個專案使用 Visual Studio Live Share 共同作業工作階段縮減逐步解說。
+title: 共用快速入門 - Visual Studio Live Share | Microsoft Docs
+description: 使用 Visual Studio Live Share 共同作業工作階段來共用您第一個專案的概略逐步解說。
 ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
@@ -15,7 +15,7 @@ ms.workload:
 - liveshare
 ms.openlocfilehash: 3596b25dc0d08962d7813f52549dbe6fef4f00a0
 ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/02/2019
 ms.locfileid: "57255498"
@@ -32,16 +32,16 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 歡迎使用 Visual Studio Live Share！ Live Share 可讓您即時與其他人以共同作業方式編輯和偵錯，不論您所使用程式設計語言或建置的應用程式類型為何。 它可讓您立即且安全地共用您目前的專案，然後視需要共用偵錯工作階段、終端機執行個體、localhost Web 應用程式、語音通話等！
 
-準備好開始著手了嗎？  因此快速且自然，就不難這麼做，應該是小組共同作業 ！ 基於這個理由，Visual Studio Live Share 可簡化開始使用，以便您可以無接縫地開始共用您的工作和想法。
+準備好開始著手了嗎？  小組共同作業就應該如此快速且自然，且能輕鬆做到！ 因此，Visual Studio Live Share 可讓您輕鬆開始使用，以便您順暢地開始共用您的工作和想法。
 
 > [!TIP]
-> 您知道您可以「加入自己的共同作業工作階段」嗎？ 這讓您可以自行試用 Live Share，或是啟動 Visual Studio 或 VS Code 的執行個體，並從遠端連線到該執行個體！ 您甚至可以在兩個執行個體中使用相同的身分識別。 趕緊去瞧一瞧！
+> 您知道您可以「加入自己的共同作業工作階段」嗎？ 這讓您可以自行試用 Live Share，或是啟動 Visual Studio 或 VS Code 的執行個體，並從遠端連線到該執行個體！ 您甚至可以在這兩個執行個體使用相同的身分識別。 趕緊去瞧一瞧！
 
-只要遵循下列步驟以開始共用。
+只要遵循下列步驟即可開始共用。
 
-## <a name="1-install-the-extension"></a>1.安裝擴充功能
+## <a name="1-install-the-extension"></a>1.安裝延伸模組
 
-安裝延伸模組很簡單。 只要遵循下列步驟：
+安裝延伸模組很簡單。 請遵循下列步驟進行：
 
 <table style="width: 100%; border:none;">
 <tr>
@@ -80,7 +80,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 ## <a name="2-sign-in"></a>2.登入
 
-安裝 Live Share 延伸模組、 重新啟動，並等待相依性，以完成安裝 (VS Code) 之後, 您會想要讓其他參與者了解您的身分登入。 只要按一下 「 即時共用 」 狀態列項目 (VS Code) / [登入] 按鈕 (VS) 開始。
+安裝 Live Share 延伸模組、重新啟動並等待相依性完成安裝 (VS Code) 之後，您會想要登入以便其他參與者知道您是誰。 只需按一下 [Live Share] 狀態列項目 (VS Code)/[登入] 按鈕 (VS) 來開始。
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -93,27 +93,27 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </tr>
 </table>
 
-在  **VS Code**，通知會出現要求您登入的啟動時，將會啟動您的瀏覽器。 完成登入您的瀏覽器中的程序，然後只需關閉瀏覽器完成。
+在 **VS Code** 中，瀏覽器會在要求您登入的通知出現時啟動。 在瀏覽器中完成登入程序，完成後關閉瀏覽器。
 
-![使用網頁瀏覽器登入要求的快顯通知](../media/vscode-sign-in-toast.png)
+![使用網頁瀏覽器要求您登入的快顯通知](../media/vscode-sign-in-toast.png)
 
-> **Linux 使用者：** 您可能會提示您輸入使用者程式碼，如果您使用較舊版本的 Live Share (v0.3.295 或以下版本)。 更新延伸模組的最新版本，或按一下 「 需要疑難排解嗎？ 」 連結登入之後，以查看程式碼。 請參閱[如需詳細資訊，這裡](../use/vscode.md#sign-in-using-a-user-code)。
+> **Linux 使用者：** 如果您使用舊版 Live Share (v0.3.295 或更舊版本)，系統可能會提示您輸入使用者程式碼。 將延伸模組更新為最新版本，或在登入後按一下 [遇到問題了嗎?] 連結以查看程式碼。 請參閱[此處以取得詳細資料](../use/vscode.md#sign-in-using-a-user-code)。
 
-在  **Visual Studio**，Live Share 會自動使用您[個人化帳戶](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)。 如此一來，您可以直接登入可以用正常方式。 不過，如果您想要使用的不同登入與您的 Visual Studio 個人化帳戶時，請移至**工具&gt;選項&gt;Live Share&gt;使用者帳戶**並選取不同的認證。
+在 **Visual Studio** 中，Live Share 會自動使用您的[個人化帳戶](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio)。 如此一來，您即可直接以一般方式登入。 不過，如果您希望使用與 Visual Studio 個人化帳戶不同的登入方式，請前往 [工具] &gt; [選項] &gt; [Live Share] &gt; [使用者戶帳戶]，然後選取不同的認證。
 
-請參閱[疑難排解](../troubleshooting.md#sign-in)如果仍然發生問題。
+如果仍然發生問題，請參閱[疑難排解](../troubleshooting.md#sign-in)。
 
-## <a name="3-open-a-folder-project-or-solution"></a>3.開啟資料夾、 專案或方案
+## <a name="3-open-a-folder-project-or-solution"></a>3.開啟資料夾、專案或方案
 
-您可以使用一般工作流程來開啟資料夾、 專案或您想要在 Visual Studio 或 Visual Studio Code 中共用的解決方案。
+使用您的一般工作流程來開啟資料夾、專案或您希望在 Visual Studio 或 Visual Studio Code 中共用的方案。
 
-### <a name="4-optional-update-hidden-or-excluded-files"></a>4.[選擇性] 更新隱藏或排除的檔案
+### <a name="4-optional-update-hidden-or-excluded-files"></a>4. [選擇性] 更新隱藏或排除的檔案
 
-根據預設，Live Share**隱藏**.gitignore 檔案，在您從來賓的共用資料夾中參考的任何檔案/資料夾。 **隱藏**檔案可防止客體的檔案樹狀結構中出現。 **排除**就會套用更嚴格的規則，避免 Live Share 開啟來賓在移至定義，或如果您的檔案在時逐步執行偵錯，或 「 遵循 」 的情況中的檔案。 如果您想要不同的檔案/排除隱藏 **。 vsls.json**檔案可以新增至您的專案，使用這些設定。 請參閱[控制檔案存取權和可見性](../reference/security.md#controlling-file-access-and-visibility)如需詳細資訊。
+根據預設，Live Share 會**隱藏**來自來賓之共用資料夾中 .gitignore 檔案所參考的任何檔案/資料夾。 **隱藏**檔案可防止該檔案在來賓的檔案樹狀目錄中顯示。 **排除**檔案會套用更嚴格的規則，以防止 Live Share 在前往定義時，或您在偵錯中或「受到跟隨」時進入檔案等情況下，為來賓開啟該檔案。 如果您希望隱藏/排除不同的檔案，您可以使用這些設定將 **.vsls.json** 檔案新增至您的專案。 請參閱[控制檔案存取權和可見性](../reference/security.md#controlling-file-access-and-visibility)以取得詳細資料。
 
 ## <a name="5-start-a-collaboration-session"></a>5.開始共同作業工作階段
 
-接下來，只要在您的工具中按一下"Live Share"並邀請連結會自動複製到剪貼簿。
+接下來，只需在工具中按一下 [Live Share]，邀請連結就會自動複製到剪貼簿。
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -127,13 +127,13 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </table>
 
 > [!NOTE]
-> 您可能會要求您的桌面防火牆軟體所允許 Live Share 的代理程式在您共用的第一次開啟連接埠。 接受這完全是選擇性的但可讓受保護 「 直接模式 」 來改善效能，因為您正在使用的人員是在相同網路上時。 請參閱[變更連線模式](../reference/connectivity.md#changing-the-connection-mode)如需詳細資訊。
+> 桌面防火牆軟體可能會要求您允許 Live Share 代理程式在您第一次共用時開啟連接埠。 這完全是選擇性的，但是當您與一起工作的人員位於相同網路時，可提供安全的「直接模式」來改善效能。 請參閱[變更連線模式](../reference/connectivity.md#changing-the-connection-mode)以取得詳細資料。
 
-## <a name="6-optional-enable-read-only-mode"></a>6.[選擇性] 啟用唯讀模式
+## <a name="6-optional-enable-read-only-mode"></a>6. [選擇性] 啟用唯讀模式
 
-一旦您開始您的共同作業工作階段，您可以設定為唯讀，以防止來賓對共用的程式碼進行編輯的工作階段。
+一旦您啟動共同作業工作階段，您可以將工作階段設定為唯讀，以防止來賓對正在共用的程式碼進行編輯。
 
-共用之後, 您會收到通知，邀情連結，已複製到剪貼簿。 然後，您可以選取的選項，讓工作階段，唯讀狀態。
+共用之後，您會收到通知指出邀請連結已複製到剪貼簿。 您隨即可以選取選項來將工作階段設為唯讀。
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -146,21 +146,21 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </tr>
 </table>
 
-在  **VS Code**，您也可以從 Live Share viewlet 索引標籤來啟動的唯讀工作階段。
+在 **VS Code** 中，您也可以從 [Live Share] viewlet 索引標籤啟動唯讀工作階段。
 
-![使用網頁瀏覽器登入要求的快顯通知](../media/vscode-read-only-viewlet.png)
+![使用網頁瀏覽器要求您登入的快顯通知](../media/vscode-read-only-viewlet.png)
 
-### <a name="7-send-someone-the-invite-link"></a>7.邀情連結傳送給某人
+### <a name="7-send-someone-the-invite-link"></a>7.將邀請連結傳送給某人
 
-透過電子郵件、 Slack 傳送連結、 Skype 等，可與您想要邀請。 在瀏覽器中開啟連結，可讓它們加入共同作業工作階段共用資料夾、 專案或開啟方案的內容。 請注意，給定的層級存取 Live Share 工作階段可以提供給來賓**您應該只與您所信任之人員共用**和考慮透過您共用的影響。
+透過電子郵件、Slack、Skype 等將連結傳送給您希望邀請的人員。 在瀏覽器中開啟連結，可讓他們加入共用您所開啟之資料夾、專案或方案內容的共同作業工作階段。 請注意，考慮到 Live Share 工作階段所能為來賓提供的存取層級，**您應該只與您信任的人共用**，並考量共用這些內容的影響。
 
-> **安全性秘訣：** 想要了解安全性含意，Live Share 功能嗎？ 請參閱[安全性](../reference/security.md)文章。
+> **安全性提示：** 想要了解一些 Live Share 功能的安全性影響嗎？ 請參閱[安全性](../reference/security.md)一文。
 
-如果您受邀來賓有問題，[快速入門：加入您的第一個工作階段](join.md)文章上啟動並執行以來賓身分提供更多的資訊。
+如果您邀請的來賓有問題，[快速入門：加入您的第一個工作階段](join.md)一文提供以來賓身分啟動並執行的詳細資訊。
 
-## <a name="8-optional-approve-the-guest"></a>8.[選擇性] 核准客體
+## <a name="8-optional-approve-the-guest"></a>8. [選擇性] 核准來賓
 
-根據預設，來賓會自動加入您的共同作業工作階段，並當他們準備好要與您合作，您會收到通知。
+根據預設，來賓會自動加入您的共同作業工作階段，當他們準備好要與您共同作業時，您即會收到通知。
 
 <table style="border: none;">
 <tr style="border: none;">
@@ -173,31 +173,31 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 </tr>
 </table>
 
-您可以選擇改為加入的任何人都需要明確的 「 核准 」。 如果您有開啟此設定時，通知會提示您核准的客體，當他們嘗試加入您的工作階段。
+您可以選擇讓任何人在加入前都需要明確的「核准」。 如果您開啟此設定，則當來賓嘗試加入您的工作階段時，系統會通知您核准。
 
-請參閱[需要客體核准](../reference/security.md#requiring-guest-approval)如需有關如何開啟此功能。
+請參閱[要求來賓核准](../reference/security.md#requiring-guest-approval)以取得如何開啟此功能的詳細資料。
 
-## <a name="9-collaborate"></a>9.共同作業 ！
+## <a name="9-collaborate"></a>9.共同作業！
 
-就這麼容易！ 以下是要試試看，一旦來賓已加入您的幾個事項：
+就這麼容易！ 來賓加入您後，您可以嘗試下列一些事項：
 
-1. 四處移動到不同的檔案，在專案中獨立並進行一些編輯
-1. 請遵循來賓，並觀察它們捲動，進行編輯，然後瀏覽至不同的檔案
-1. 啟動與他們共同偵錯工作階段
-1. 共用伺服器，因此您可以看看起來像在其電腦上執行的 web 應用程式
-1. 共用終端機，並執行一些命令
+1. 獨自瀏覽專案中的不同檔案，並進行一些編輯
+1. 跟隨來賓，並觀察他們捲動、編輯並巡覽至不同檔案
+1. 啟動與來賓的共同偵錯工作階段
+1. 共用伺服器，以便您查看在其電腦上執行的 Web 應用程式
+1. 共用終端機並執行一些命令
 
-請參閱[Visual Studio Code](../use/vscode.md)並[Visual Studio](../use/vs.md)有關如何執行這些動作，以及其他資訊的延伸模組文件。
+請參閱 [Visual Studio Code](../use/vscode.md) 和 [Visual Studio](../use/vs.md) 延伸模組文件，以取得如何執行這些動作及其他項目的資訊。
 
 有問題嗎？ 請參閱[疑難排解](../troubleshooting.md)或[提供意見反應](../support.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
-看看這些額外的文章，如需詳細資訊。
+請查看下列其他文章以取得詳細資訊。
 
 - [快速入門：加入您的第一個共同作業工作階段](join.md)
-- [操作說明：使用 Visual Studio Code 進行共同作業](../use/vscode.md)
-- [操作說明：使用 Visual Studio 進行共同作業](../use/vs.md)
+- [如何：使用 Visual Studio Code 共同作業](../use/vscode.md)
+- [如何：使用 Visual Studio 共同作業](../use/vs.md)
 
 參考資料
 
