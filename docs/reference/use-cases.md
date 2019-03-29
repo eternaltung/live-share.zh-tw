@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 05/21/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: lostintangent
 ms.author: joncart
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 2ef982a00a06cb312cd0270ba65abd308518d99e
-ms.sourcegitcommit: c20a6ddef4f184678a2d6cf1a2493d42ea3a4356
+ms.openlocfilehash: d4dc3f2a6dfd8e0951a944cf4f487cedc49e4370
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2019
-ms.locfileid: "57725697"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640142"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -149,7 +147,7 @@ Live Share 可讓您立即與其他人共用您的專案，因為它可以用來
 - [語言和平台支援](platform-support.md)
 - [Live Share 的連線需求](connectivity.md)
 - [Live Share 的安全性功能](security.md)
-- [所有主要 bug、 功能要求和限制](https://aka.ms/vsls-issues)
-- [所有的功能要求和限制](https://aka.ms/vsls-feature-requests)
+- [所有主要 Bug、功能要求和限制](https://aka.ms/vsls-issues) \(英文\)
+- [所有功能要求和限制](https://aka.ms/vsls-feature-requests) \(英文\)
 
 有問題嗎？ 請參閱[疑難排解](../troubleshooting.md)或[提供意見反應](../support.md)。

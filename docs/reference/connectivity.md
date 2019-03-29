@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 6edc5bcf18dde6f84a4972a1efd755592cbef18c
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: c685df798fc10b449c3e73db678e3b5d34e73ef0
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255641"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640077"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -83,7 +81,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 ## <a name="manually-adding-a-firewall-entry"></a>手動新增的防火牆項目
 
-如上面所述，直接模式需要您的個人防火牆允許**vsls 代理程式**接受連線，請在連接埠範圍 5990 5999。 如果您想要使用直接模式，但發現您的防火牆沒有 vsls 代理程式項目，您可以手動新增。 如何這麼做會因防火牆軟體，但您可以找到有關的資訊**[設定 Windows 防火牆](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)**。
+如上面所述，直接模式需要您的個人防火牆允許**vsls 代理程式**接受連線，請在連接埠範圍 5990 5999。 如果您想要使用直接模式，但發現您的防火牆沒有 vsls 代理程式項目，您可以手動新增。 如何這麼做會因防火牆軟體，但您可以找到有關的資訊 **[設定 Windows 防火牆](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule)**。
 
 如果看不到 vsls 代理程式的項目，您可以在下列位置，找到代理程式可執行檔。
 
@@ -125,8 +123,8 @@ Visual Studio Live Share 目前有周圍 proxy 使用的一些限制。 自動 p
 
 ## <a name="see-also"></a>另請參閱
 
-- [操作說明：使用 Visual Studio Code 進行共同作業](../use/vscode.md)
-- [操作說明：使用 Visual Studio 進行共同作業](../use/vs.md)
+- [操作說明：使用 Visual Studio Code 共同作業](../use/vscode.md)
+- [如何：使用 Visual Studio 共同作業](../use/vs.md)
 - [Live Share 的安全性功能](security.md)
 
 有問題嗎？ 請參閱[疑難排解](../troubleshooting.md)或[提供意見反應](../support.md)。

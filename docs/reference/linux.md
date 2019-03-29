@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 10/6/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 013eb234e5acca02a39e90f0697a146039bb2a89
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 9ac16b0e598fb07446c2b682397684b7e2e4709a
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255538"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640129"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,17 +26,17 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="linux-installation-details"></a>Linux 安裝詳細資料
 
-Linux 是變化極大的環境，而且可以複雜而難以取得使用與大量的桌面環境，以及散發套件。 如果您決定要支援的版本**Ubuntu 桌面**（16.04 +，） **CentOS 7**，或**Fedora 工作站**（27 以上），而且只用**VS 的官方發行版程式碼**，您應該會發現簡單的程序。 但是，您會使用非標準組態或下游的通訊群組，可能會或可能不會遇到一些營運。 本文件提供一些資訊需求以及一些疑難排解的詳細資料，有助於您啟動並執行，即使您的組態是唯一的社群支援。 請注意，僅支援 Live Share **64 位元 Linux**。
+Linux 環境彼此之間很容易具有高度差異，其為數眾多的桌面環境和散發套件，很可能會使作業變得複雜。 如果您決定要支援的版本**Ubuntu 桌面**（16.04 +，） **CentOS 7**，或**Fedora 工作站**（27 以上），而且只用**VS 的官方發行版程式碼**，您應該會發現簡單的程序。 不過，在使用非標準設定或下游散發套件的情況下，您便有可能會遇到問題。 本文件提供一些資訊需求以及一些疑難排解的詳細資料，有助於您啟動並執行，即使您的組態是唯一的社群支援。 請注意，僅支援 Live Share **64 位元 Linux**。
 
 ## <a name="install-linux-prerequisites"></a>安裝 Linux 必要條件
 
-某些 Linux 版本遺漏 Live Share 需要運作的程式庫。 根據預設，Live Share 會嘗試偵測並安裝您的 Linux 必要條件。 Live Share 遇到的問題，可以源自遺漏要求您安裝它們的權限的程式庫時，您會看到快顯通知。
+某些 Linux 散發套件並沒有 Live Share 運作所需的程式庫。 根據預設，Live Share 會嘗試偵測並為您安裝 Linux 必要條件。 當 Live Share 遇到可能源自遺失程式庫的問題時，便會向您顯示快顯通知並要求安裝它們的權限。
 
 ![Linux 必要條件會遺失快顯通知顯示訊息](../media/vscode-linux-prereq-missing.png)
 
-當您按一下 「 安裝 」 時，終端機視窗會出現，您的作業系統將會要求您輸入您的系統管理員 / 根目錄 (sudo) 密碼，以繼續。 假設指令碼順利完成，重新載入 Visual Studio Code，當系統提示您時，應該會完成所有設定 ！ 您也可以查看**[因發行版本的祕訣](#tips-by-distribution)** 其他提示和因應措施如果有的話。
+當您按一下 「 安裝 」 時，終端機視窗會出現，您的作業系統將會要求您輸入您的系統管理員 / 根目錄 (sudo) 密碼，以繼續。 假設指令碼順利完成，重新載入 Visual Studio Code，當系統提示您時，應該會完成所有設定 ！ 您也應該查看 **[依散發套件分類的提示](#tips-by-distribution)**，以查看其他提示和現有的因應措施。
 
-如果您看到訊息，指出指令碼不支援您的散發套件，請參閱 < **[社群支援的散發套件的秘訣](#tips-for-unsupported-distros)** 社群共用與我們的資訊。
+如果您看見指令碼不支援散發套件的訊息，請參閱**[適用於社群支援散發套件的提示](#tips-for-unsupported-distros)** 以取得社群已和我們分享的相關資訊。
 
 如果您**不想為您執行命令的 VS Code**，您也可以選擇重新執行此指令碼的最新版本隨時以手動方式在終端機視窗中使用下列命令：
 
@@ -65,7 +63,7 @@ Linux 是變化極大的環境，而且可以複雜而難以取得使用與大�
 | Fedora 工作站 27 （64 位元） | &lt;none&gt; | &lt;none&gt; |
 | CentOS 7 GNOME 桌面 （64 位元） | &lt;none&gt; | &lt;none&gt; |
 
-請參閱**[社群支援的散發套件的秘訣](#tips-for-community-supported-distros)** 如需其他非 Debian / Ubuntu 或 RHL 架構的散發套件。
+請參閱 **[社群支援的散發套件的秘訣](#tips-for-community-supported-distros)** 如需其他非 Debian / Ubuntu 或 RHL 架構的散發套件。
 
 您也可以找到其他詳細資料[以下](#detailed-library-requirements)Live Share 需要之特定程式庫。
 
@@ -149,11 +147,11 @@ Debian 9 和非 Ubuntu 下游的散發套件，請執行：
 
 ## <a name="linux-browser-integration"></a>Linux 瀏覽器整合
 
-Visual Studio 即時共用通常**不需要額外的安裝步驟**若要啟用在 Linux 上的瀏覽器整合。
+Visual Studio Live Share 通常**不需要額外安裝步驟**以在 Linux 上啟用瀏覽器整合。
 
 若要這麼做，Live Share 會自動放在桌面檔案`~/.local/share/applications`和必要的啟動器本身在`~/.local/share/vsliveshare`先初始化延伸模組。 如果成功的話，不需要採取任何動作。
 
-在某些情況下，發行版本不是支援此位置或需要取得它與他們開啟了香草的安裝搭配運作的調整。 在這些情況下，Live Share 退而使用`/usr/local/share`改。 如此一來，**您可能會收到通知您的系統管理員 (sudo) 密碼，就需要**完成安裝程序。 終端機視窗會出現告知您要安裝的瀏覽器啟動。 只要輸入您的密碼提示時，並按 enter 鍵以關閉 終端機視窗中的安裝完成之後。
+在某些情況下，發行版本不是支援此位置或需要取得它與他們開啟了香草的安裝搭配運作的調整。 在這些情況下，Live Share 退而使用`/usr/local/share`改。 如此一來，**您可能會收到通知您的系統管理員 (sudo) 密碼，就需要**完成安裝程序。 系統將會顯示終端機視窗，向您告知瀏覽器啟動器的安裝位置。 請在收到提示時直接輸入您的密碼，然後在安裝完成時按 Enter 以關閉終端機視窗。
 
 如果您希望自己執行命令相反地，您可以按一下"改為複製 」 這會改為將終端機命令複製到剪貼簿。
 
@@ -161,7 +159,7 @@ Visual Studio 即時共用通常**不需要額外的安裝步驟**若要啟用�
 
 ## <a name="see-also"></a>另請參閱
 
-- [操作說明：使用 Visual Studio Code 進行共同作業](../use/vscode.md)
+- [操作說明：使用 Visual Studio Code 共同作業](../use/vscode.md)
 - [Live Share 的連線需求](connectivity.md)
 - [Live Share 的安全性功能](security.md)
 

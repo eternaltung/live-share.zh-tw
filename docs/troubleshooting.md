@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: troubleshooting
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 8d20ec73d9cadfefced65c04b1ef18f6e844167d
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 5fc611714d148a9ba1d5a6848e0399af753d1a37
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255513"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640207"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -28,7 +26,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 # <a name="troubleshooting-visual-studio-live-share"></a>疑難排解 Visual Studio 即時共用
 
-本文章涵蓋疑難排解的秘訣、 因應措施，以及常見的問題和問題的解答。 您也可以看看[常見問題集](faq.md)。
+本文章涵蓋疑難排解的秘訣、 因應措施，以及常見的問題和問題的解答。 您也可以看看[常見問題集](faq.md)。 
 
 ## <a name="installation--tool-requirements"></a>安裝 / 工具需求
 
@@ -66,8 +64,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 |------|----------------|------------|
 | 全部 | <strong>共用/聯結：</strong>您會收到逾時或無法連線的相關錯誤。 | 請參閱[連線疑難排解](#connectivity)。 |
 | VS Code | <strong>聯結：</strong>你<strong>未提示 / 能夠啟動 VS Code</strong>瀏覽器中開啟 [加入] 頁面之後。 |  祕訣： <ul><li>確定您已<i>至少一次啟動 VS Code 並等候安裝完成狀態 列中。</i></li><li>如果不行，請嘗試在執行 「 即時共用：啟動器 Setup"命令。</li><li>**Linux 使用者**:出現提示時輸入您的系統管理員 (sudo) 密碼，執行上述命令時，請這麼做。</li><li>最後，請參閱 <<c0> [ 手動聯結](reference/manual-join.md)因應措施。</li></ul> 如果您遇到這個問題，我們很樂意以查看線索，因此請[記錄 bug](https://aka.ms/vsls-new-issue)。 |
-| VS | <strong>聯結：</strong>你<strong>未提示 / 能夠啟動 VS</strong>瀏覽器中開啟 [加入] 頁面之後。 |  請參閱[手動聯結](reference/manual-join.md)。<br /><br /> 我們也希望看到您的記錄，因此請[記錄 bug](https://aka.ms/vsls-problem)使用 Visual Studio 的 「 報告問題...」功能。 |
-| 全部 | <strong>聯結：</strong>您不希望<strong>加入連結直接貼入 Visual Studio / VS Code</strong>而不是按一下 web 連結。 | 請參閱[手動聯結](reference/manual-join.md)。 |
+| VS | <strong>聯結：</strong>你<strong>未提示 / 能夠啟動 VS</strong>瀏覽器中開啟 [加入] 頁面之後。 |  請參閱[手動加入](reference/manual-join.md)。<br /><br /> 我們也希望看到您的記錄，因此請[記錄 bug](https://aka.ms/vsls-problem)使用 Visual Studio 的 「 報告問題...」功能。 |
+| 全部 | <strong>聯結：</strong>您不希望<strong>加入連結直接貼入 Visual Studio / VS Code</strong>而不是按一下 web 連結。 | 請參閱[手動加入](reference/manual-join.md)。 |
 | 全部 | <strong>聯結：</strong>您會看到訊息指出，「**工作區的擁有者似乎是離線**，"聯結透過瀏覽器時。 | 可能的因應措施：<br /><ul><li>請嘗試[手動聯結](reference/manual-join.md)。 我們已經看到跨區域的問題 (例如東部和西部美國) 因為服務問題，不會影響聯結的聯結。</li><li>即時共用可能無法直接路由至主應用程式在 「 自動 」 連線模式中執行時。 請嘗試[轉送模式](reference/connectivity.md)。</li></ul>請參閱[連線疑難排解](#connectivity)的更多可能性 |
 | VS Code | <strong>聯結：</strong>您加入透過瀏覽器<strong>登入前先</strong>，已不提示您登入</strong>，並永遠不會完成聯結。 |  這是[已知的錯誤](https://github.com/MicrosoftDocs/live-share/issues/167)。 按一下登入狀態的工具列項目，登入，然後再加入一次。 |
 
@@ -81,7 +79,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 |------|------|----------------|
 | 全部 | 您使用<strong>proxy</strong>並看到許多連線問題 | Proxy 設定可能很難。  請嘗試設定**HTTP_PROXY**並**HTTPS_PROXY**環境變數**全域**後再重新啟動您的工具。 請參閱[proxy 設定](reference/connectivity.md#proxies)如需詳細資訊。 可能有一些設定，我們尚不支援，因此[讓我們知道](https://github.com/MicrosoftDocs/live-share/issues/86)如果這不適用於您。 |
 | VS Code | 安裝延伸模組，並啟動 VS Code，第一次之後得到<strong>錯誤出現在狀態列中的 「 完成安裝 」 時</strong>。 |  您無法存取網際網路或 download.visualstudio.microsoft.com 存取及/或您的個人或公司防火牆會封鎖連接埠 443 上的 download.microsoft.com。 請參閱[此處](https://github.com/MicrosoftDocs/live-share/issues/58)了解為何 Live Share 需要在此時下載某項目。 |
-| 全部 | 您是<strong>無法登入 Visual Studio Live Share</strong> | 您無法存取網際網路，或存取 *。 liveshare.vsengsaas.visualstudio.com 連接埠 80/443 防火牆會封鎖您個人或公司。 輸入 https://insiders.liveshare.vsengsaas.visualstudio.com瀏覽器中，並確認您登陸在 Visual Studio Live Share 首頁上。 |
+| 全部 | 您是<strong>無法登入 Visual Studio Live Share</strong> | 您無法存取網際網路，或存取 *。 liveshare.vsengsaas.visualstudio.com 連接埠 80/443 防火牆會封鎖您個人或公司。 輸入 [https://insiders.liveshare.vsengsaas.visualstudio.com](https://insiders.liveshare.vsengsaas.visualstudio.com) 瀏覽器中，並確認您登陸在 Visual Studio Live Share 首頁上。 |
 | 全部 | 您處於<strong>auto 模式</strong>（預設值），能夠登入，但請參閱<strong>逾時或連線錯誤</strong>共用，或加入時。 | 請同時直接和轉送來連接失敗模式，或使用 auto 模式的 bug。 如果您之後無法連接[切換為直接或轉送模式](reference/connectivity.md#changing-the-connection-mode)，請[引發錯誤](https://aka.ms/vsls-problem)。 |
 | 全部 | 您處於<strong>直接模式</strong>，能夠登入，但請參閱<strong>逾時或連線錯誤</strong>共用，或加入時。 | 在來賓和主機無法直接連線。 請嘗試[自動] 或 [轉送模式](reference/connectivity.md#changing-the-connection-mode)若要查看問題是否就會消失。 您可能需要[手動允許通過個人防火牆的 Live Share](reference/connectivity.md#manually-adding-a-firewall-entry) ，或只使用轉送模式。 |
 | 全部 | 您處於<strong>轉送模式</strong>，能夠登入，但收到的通知<strong>逾時或連線錯誤</strong>共用，或加入時。 | 存取 *。 servicebus.windows.net 連接埠 80/443 會封鎖您的個人或公司防火牆封鎖。 請嘗試[直接模式](reference/connectivity.md#changing-the-connection-mode)。 |
@@ -102,8 +100,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 參考資料
 
-- [所有主要 bug、 功能要求和限制](https://aka.ms/vsls-issues)
-- [所有的功能要求和限制](https://aka.ms/vsls-feature-requests)
+- [所有主要 Bug、功能要求和限制](https://aka.ms/vsls-issues) \(英文\)
+- [所有功能要求和限制](https://aka.ms/vsls-feature-requests) \(英文\)
 - [Live Share 的連線需求](reference/connectivity.md)
 - [Linux 安裝詳細資料](reference/linux.md)
 - [語言和平台支援](reference/platform-support.md)

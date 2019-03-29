@@ -5,20 +5,18 @@ ms.custom: ''
 ms.date: 12/17/2018
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- liveshare
 ms.topic: reference
 author: chuxel
 ms.author: clantz
 manager: AmandaSilver
 ms.workload:
 - liveshare
-ms.openlocfilehash: 0bc97691ca7733f694190e86140b930e68657ade
-ms.sourcegitcommit: 4f733c9053848f26da03d47050bcb734f6c98b31
+ms.openlocfilehash: 754a740118ef9e6de2463fb3bb0537af350409aa
+ms.sourcegitcommit: 100fce9b9bbcd7e6f68d40659bd2760e9537de37
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57255550"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58640194"
 ---
 <!--
 Copyright © Microsoft Corporation
@@ -223,7 +221,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 共同偵錯時，能夠存取主持人針對偵錯工作階段所提供的不同應用程式連接埠會非常有用。 您可能想要存取在瀏覽器應用程式、 存取本機資料庫，或叫用 REST 端點，從您的工具。 Live Share 可讓您的 「 共用的伺服器 」 可將主機的電腦上的本機連接埠對應到客體的機器上完全相同的連接埠。 為來賓，您接著可以與互動的應用程式完全如同它已在本機執行您的電腦上 (例如主機和客體可以同時存取 web 應用程式上執行 http://localhost:3000)。
 
-不過，在主機中，您應該**謹慎選擇與您共用的連接埠**來賓與只共用應用程式連接埠而不是系統的連接埠。 來賓，共用的連接埠的行為如同就好似他們自己的機器上執行，伺服器/服務。 這是非常實用，但如果共用錯誤的連接埠，可能也會有風險。 基於這個理由，Live Share 都不會進行任何假設項目應該或不應該共用而不需要的組態設定和主應用程式執行動作。
+不過，在主機中，您應該**謹慎選擇與您共用的連接埠**來賓與只共用應用程式連接埠而不是系統的連接埠。 對於來賓，共用連接埠的行為就如同該伺服器/服務是在他們自己的機器上執行。 這非常有用，但如果共用不適當的連接埠，也可能有風險。 基於這個理由，Live Share 都不會進行任何假設項目應該或不應該共用而不需要的組態設定和主應用程式執行動作。
 
 在 Visual Studio 中， **web 應用程式連接埠**指定在 ASP.NET 專案中是**只偵錯期間會自動共用**以便來賓存取權的 web 應用程式執行時。 不過，您可以關閉這項自動化藉由設定工具 > 選項 > Live Share > 「 共用 web 應用程式偵錯 」 為"False"(如果您偏好。
 
@@ -237,9 +235,9 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 ## <a name="sharing-a-terminal"></a>共用終端機
 
-新式開發經常會運用各種命令列工具。 幸運的是，Live Share 可讓身為主持人的您選擇與來賓「共用終端機」。 共用終端機可以是唯讀或完整的共同作業，因此您和來賓可執行命令，並查看結果。 為主機，就能夠允許設為其他共同作業者只會看到輸出，或使用任何數目的命令列工具來執行測試時，組建，或甚至是分類環境特定問題。
+新式開發經常會運用各種命令列工具。 幸運的是，Live Share 可讓身為主持人的您選擇與來賓「共用終端機」。 共用的終端機可以是唯讀，或是完全共同作業，讓您和您的來賓都能執行命令並看到結果。 為主機，就能夠允許設為其他共同作業者只會看到輸出，或使用任何數目的命令列工具來執行測試時，組建，或甚至是分類環境特定問題。
 
-只有主機就可以開始共用的終端機，以防止從一個啟動和執行您不預期或監看的來賓。 當您啟動終端機中共用做為主機時，您可以指定它應該是唯讀還是讀取/寫入。 讀取/寫入終端機中時，每個人都可以輸入在終端機中包括容易介入如果來賓所執行的動作不喜歡的主機。 不過，為了安全起見，應該**只提供讀取/寫入存取權的來賓，當您知道它們有實際需要**後固定使用唯讀模式的終端機中，如案例中，您只是來賓，請參閱您執行任何命令的輸出。
+只有主機就可以開始共用的終端機，以防止從一個啟動和執行您不預期或監看的來賓。 當您啟動終端機中共用做為主機時，您可以指定它應該是唯讀還是讀取/寫入。 當終端機是讀取/寫入時，包括主持人在內的每個人都可以在終端機中輸入，這樣當來賓在進行您不希望的操作時，您輕鬆就能介入。 不過，為了安全起見，您應該**只在確定來賓確實需要讀取/寫入存取權時才提供此權限**，並在您只想要來賓查看您執行之任何命令的輸出時提供唯讀終端機。
 
 在 Visual Studio 中，預設不會共用終端機。 在 VS Code 中自動共用終端機**唯讀**預設。 不過，您可以將下列內容新增至 settings.json 停用此：
 
@@ -266,8 +264,8 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 
 ## <a name="see-also"></a>另請參閱
 
-* [操作說明：使用 Visual Studio Code 進行共同作業](../use/vscode.md)
-* [操作說明：使用 Visual Studio 進行共同作業](../use/vs.md)
+* [操作說明：使用 Visual Studio Code 共同作業](../use/vscode.md)
+* [如何：使用 Visual Studio 共同作業](../use/vs.md)
 * [Live Share 的連線需求](connectivity.md)
 
 有問題嗎？ 請參閱[疑難排解](../troubleshooting.md)或[提供意見反應](../support.md)。

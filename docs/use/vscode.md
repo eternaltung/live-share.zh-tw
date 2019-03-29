@@ -79,9 +79,9 @@ Linux 環境彼此之間很容易具有高度差異，其為數眾多的桌面�
 
 ![顯示 Linux 必要條件遺失之訊息的快顯通知](../media/vscode-linux-prereq-missing.png)
 
-當您按一下 [安裝] 時，將會出現終端機視窗，且您必須在其中輸入系統管理員 (sudo) 密碼以繼續。 當此作業成功完成之後，請重新啟動 Visual Studio Code，一切便能就緒！ 您也應該查看**[依散發套件分類的提示](../reference/linux.md#tips-by-distribution)**，以查看其他提示和現有的因應措施。
+當您按一下 [安裝] 時，將會出現終端機視窗，且您必須在其中輸入系統管理員 (sudo) 密碼以繼續。 當此作業成功完成之後，請重新啟動 Visual Studio Code，一切便能就緒！ 您也應該查看 **[依散發套件分類的提示](../reference/linux.md#tips-by-distribution)**，以查看其他提示和現有的因應措施。
 
-如果您看見指令碼不支援散發套件的訊息，請參閱**[適用於社群支援散發套件的提示](../reference/linux.md#tips-for-community-supported-distros)** 以取得社群已和我們分享的相關資訊。
+如果您看見指令碼不支援散發套件的訊息，請參閱 **[適用於社群支援散發套件的提示](../reference/linux.md#tips-for-community-supported-distros)** 以取得社群已和我們分享的相關資訊。
 
 如果您**不想讓 VS Code 為您執行命令**，您也可以從終端機視窗執行下列命令，以隨時手動選擇重新執行此指令碼的最新版本：
 
@@ -93,7 +93,7 @@ Visual Studio Live Share 通常**不需要額外安裝步驟**以在 Linux 上�
 
 雖然此情況並不常見，但在某些散發套件上**系統可能會通知您需要系統管理員 (sudo) 密碼**才能完成安裝程序。 系統將會顯示終端機視窗，向您告知瀏覽器啟動器的安裝位置。 請在收到提示時直接輸入您的密碼，然後在安裝完成時按 Enter 以關閉終端機視窗。
 
-您可以在**[這裡](../reference/linux.md#linux-browser-integration)** 深入了解此要求背後的原因，以及 Live Share 放置檔案的位置。 請注意，即使您無法順利使瀏覽器整合運作，您仍然可以**[手動加入共同作業工作階段](../use/vscode.md#join-manually)**。
+您可以在 **[這裡](../reference/linux.md#linux-browser-integration)** 深入了解此要求背後的原因，以及 Live Share 放置檔案的位置。 請注意，即使您無法順利使瀏覽器整合運作，您仍然可以 **[手動加入共同作業工作階段](../use/vscode.md#join-manually)**。
 
 ## <a name="sign-in"></a>登入
 
